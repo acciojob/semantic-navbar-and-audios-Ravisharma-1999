@@ -3,29 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <link rel="stylesheet" href="styles.css">
+    <title>Semantic Navbar & Audios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .audio-section {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  
-   
-    <!-- Part 2: Audio Section -->
-    <section>
-        <h1>3 Random Audios</h1>
-		<ol>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="audio-section">
+        <h2>3 random audios</h2>
         <audio controls>
             <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <br>
         <audio controls>
             <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
             Your browser does not support the audio element.
         </audio>
+        <br>
         <audio controls>
             <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-		</ol>
     </section>
 </body>
 </html>
